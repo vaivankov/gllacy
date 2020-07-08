@@ -3,4 +3,4 @@
 
 Автор макета: [HTML Academy](https://htmlacademy.ru/)
 
-Главная страница: [barbershop](https://vaivankov.github.io/gllacy/)
+Главная страница: [gllacy](https://vaivankov.github.io/gllacy/)
