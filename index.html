@@ -12,12 +12,25 @@
 <body>
 
   <header>
-    <img src="svg/logo.svg" alt="Логотип компании GllacyShop">
-    <ul>
-      <li><a href="#">Каталог</a></li>
-      <li><a href="#">Доставка и оплата</a></li>
-      <li><a href="#">О Компании</a></li>
-    </ul>
+    <nav>
+      <ul>
+        <li>
+          <a href="#">
+            <span>Главная</span>
+            <img src="svg/logo1.svg" alt="Логотип компании GllacyShop">
+          </a>
+        </li>
+        <li>
+          <a href="#">Каталог</a>
+        </li>
+        <li>
+          <a href="#">Доставка и оплата</a>
+        </li>
+        <li>
+          <a href="#">О Компании</a>
+        </li>
+      </ul>
+    </nav>
     <ul>
       <li>
         <a href="#">
@@ -48,29 +61,31 @@
   <main>
 
     <section>
-      <span>С 10 до 20, ежедневно</span>
-      <a href="tel:+7(495)495-49-54">+7(495)495-49-54</a>
-      <img src="img/double-icecream-01.png" alt="">
-      <span>Крем-брюле и пломбир с малиновым джемом</span>
-      <button type="button">Давайте оба!</button>
-      <img src="img/double-icecream-02.png" alt="">
-      <span>Крем-брюле и пломбир с малиновым джемом</span>
-      <button type="button">Давайте оба!</button>
-      <img src="img/double-icecream-03.png" alt="">
-      <span>Крем-брюле и пломбир с малиновым джемом</span>
-      <button type="button">Давайте оба!</button>
+      <div>
+        <span>С 10 до 20, ежедневно</span>
+        <a href="tel:+7(495)495-49-54">+7(495)495-49-54</a>
+      </div>
+      <figure>
+        <img src="img/double-icecream-01.png" alt="">
+        <figcaption>Крем-брюле и пломбир с малиновым джемом</figcaption>
+        <button type="button">Давайте оба!</button>
+      </figure>
       <ul>
         <li>
-          <input type="radio" name="image-slider" value="1" checked>
+          <input type="radio" name="image-slider" value="" data-url="img/double-icecream-01.png"
+            data-desc="Крем-брюле и пломбир с малиновым джемом" checked>
         </li>
         <li>
-          <input type="radio" name="image-slider" value="2">
+          <input type="radio" name="image-slider" value="" data-url="img/double-icecream-02.png"
+            data-desc="Пломбир с шоколадом и малиновый крем-брюле">
         </li>
         <li>
-          <input type="radio" name="image-slider" value="3">
+          <input type="radio" name="image-slider" value="" data-url="img/double-icecream-03.png"
+            data-desc="Шоколадный крем-брюле и пломбир с кусочками фруктов">
         </li>
       </ul>
     </section>
+    
     <section>
       <article></article>
       <article></article>
