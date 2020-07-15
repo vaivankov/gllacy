@@ -53,7 +53,7 @@ body {
 	font-weight: 400;
 	color: #000000;
 
-	background-color: #6b9994;
+	background-color: #849d8f;
 }
 
 a {
@@ -68,17 +68,19 @@ img {
 
 .container {
 	margin: 0 auto;
-	width: calc(100vw - 80px);
+	width: 1145px;
 }
 
 .button {
 	display: flex;
 	align-items: center;
-	padding: 5px 10px;
+	padding: 7px 15px;
 	border: none;
 	border-radius: 50px;
 
 	color: #ffffff;
+	font-size: 14px;
+	font-family: "robotomedium";
 
 	background-color: #ffffff40;
 }
@@ -87,6 +89,9 @@ img {
 	margin-left: 7px;
 }
 
+.button--rounded {
+	padding: 7px;
+}
 .button--white {
 	color: #000000;
 
@@ -115,27 +120,68 @@ img {
 }
 
 .site-header {
+	min-height: 64px;
 	display: flex;
+	align-items: center;
+}
+
+.site-header__logo {
+	margin-right: 22px;
+}
+
+.logo {
+}
+
+.logo__image {
 }
 
 .site-header__site-navigation {
 	display: flex;
 	flex-wrap: wrap;
+	flex-grow: 1;
 }
 
 .site-navigation {
 	display: flex;
 	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+
+.site-navigation li:not(:first-child) {
+	margin-top: -10px;
+	margin-right: 28px;
 }
 
 .site-navigation__navigation-link {
+	border-bottom: 1px solid #ffffff30;
+	font-size: 16px;
+	font-family: "robotobold";
+	color: #ffffff;
 }
+
 .site-navigation__logo {
 }
 
 .site-header__user-navigation {
 	display: flex;
 	flex-wrap: wrap;
+}
+
+.user-navigation {
+	margin: 0;
+	left: 0;
+
+	list-style: none;
+}
+
+.user-navigation__button {
+	margin-top: -10px;
+	margin-right: 10px;
 }
 
 .main-content {
