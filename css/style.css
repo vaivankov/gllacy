@@ -26,6 +26,8 @@
 	src: url(../fonts/robotomedium.woff2);
 }
 
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden,
 .visually-hidden:not(:focus):not(:active) {
 	position: absolute;
 
@@ -49,8 +51,6 @@ body {
 
 	font-family: "roboto", Arial, sans-serif;
 	font-size: 14px;
-	line-height: 24px;
-	font-weight: 400;
 	color: #000000;
 
 	background-color: #849d8f;
@@ -85,6 +85,10 @@ img {
 	background-color: #ffffff40;
 }
 
+.button:hover {
+	cursor: pointer;
+}
+
 .button__text {
 	margin-left: 7px;
 }
@@ -103,10 +107,10 @@ img {
 
 	font-family: "robotobold";
 	font-size: 32px;
-	text-shadow: 0 2px 5px black;
-
+	text-shadow: 0 2px 5px #00000070;
+	
 	background-color: #e74a35;
-	box-shadow: 0 2px 5px black;
+	box-shadow: 0 2px 5px #00000070;
 }
 
 .button--red {
@@ -120,9 +124,11 @@ img {
 }
 
 .site-header {
-	min-height: 64px;
 	display: flex;
 	align-items: center;
+	margin: 0;
+	padding: 0;
+	min-height: 64px;
 }
 
 .site-header__logo {
@@ -130,6 +136,7 @@ img {
 }
 
 .logo {
+	display: flex;
 }
 
 .logo__image {
@@ -152,8 +159,8 @@ img {
 	list-style: none;
 }
 
-.site-navigation li:not(:first-child) {
-	margin-top: -10px;
+.site-navigation li {
+	margin-top: -5px;
 	margin-right: 28px;
 }
 
@@ -180,7 +187,7 @@ img {
 }
 
 .user-navigation__button {
-	margin-top: -10px;
+	margin-top: -5px;
 	margin-right: 10px;
 }
 
@@ -193,26 +200,107 @@ img {
 
 .slider {
 	display: flex;
+	justify-content: space-between;
 }
 
 .slider__radio-inputs {
 	display: flex;
 	flex-wrap: wrap;
+	align-items: flex-end;
+	margin: 0;
+	margin-bottom: 70px;
+	padding: 0;
+	width: 185px;
+
+	list-style: none;
 }
 
-.slider__radio {
+.slider__radio-wrapper {
+	position: relative;
+
+	height: 30px;
+	width: 30px;
 }
+
+.slider__checkbox {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translate(0,-50%);
+
+	height: 17px;
+	width: 17px;
+
+	border: 2px solid #ffffff;
+	border-radius: 50%;
+}
+
+.slider__checkbox:hover {
+	background-color: #ffffff30;
+
+	cursor: pointer;
+}
+
+.slider__input {
+}
+
+.slider__input:focus + .slider__checkbox {
+	border: 2px solid #000000;
+}
+
+.slider__input:checked + .slider__checkbox {
+	background-color: #ffffff;
+}
+
 .slider__figure {
+	position: relative;
+
+	margin: 0;
+	padding: 0;
 }
+
 .slider__image {
 }
+
 .slider__image-capture {
+	position: absolute;
+	top: 320px;
+	left: 50%;
+	transform: translate(-50%,0);
+
+	width: 700px;
+
+	color: #ffffff;
+	font-family: "robotobold";
+	font-size: 60px;
+	line-height: 55px;
+	text-align: center;
 }
+
+.slider__button {
+	position: absolute;
+	bottom: 55px;
+	left: 50%;
+	transform: translate(-50%,0);
+}
+
 .slider__schedule {
+	font-family: "robotobold";
 }
+
 .slider__time {
+	color: #ffffff;
+	text-align: right;
 }
+
 .slider__phone {
+	margin-top: 5px;
+
+	font-size: 22px;
+}
+
+.slider__phone a {
+	color: #ffffff;
 }
 
 .blog {

@@ -20,14 +20,13 @@
       <h2 class="visually-hidden">Шапка сайта</h2>
 
       <div class="site-header__logo logo">
-        <img class="logo__image" width="154" height="64" src="svg/logo.svg" alt="Логотип компании GllacyShop">
+        <a href="index.html">
+          <img class="logo__image" width="154" height="64" src="svg/logo.svg" alt="Логотип компании GllacyShop">
+        </a>
       </div>
 
       <nav class="site-header__site-navigation site-navigation">
         <ul class="site-navigation">
-          <li>
-            <a class="site-navigation__navigation-link visually-hidden" href="#"> Главная </a>
-          </li>
           <li>
             <a class="site-navigation__navigation-link" href="#">Каталог</a>
           </li>
@@ -42,26 +41,19 @@
 
       <ul class="site-header__user-navigation user-navigation">
         <li class="user-navigation__button">
-          <a href="#">
-            <button class="button button--rounded" type="button">
-              <img width="17" height="17" src="svg/loupe.svg" alt="Иконка поиска">
-            </button>
+          <a class="button button--rounded" href="#"><img width="17" height="17" src="svg/loupe.svg"
+              alt="Иконка поиска"></a>
+        </li>
+        <li class="user-navigation__button">
+          <a class="button" href="#">
+            <img width="21" height="19" src="svg/entrance.svg" alt="Иконка входа">
+            <span class="button__text">Вход</span>
           </a>
         </li>
         <li class="user-navigation__button">
-          <a href="#">
-            <button class="button" type="button">
-              <img width="21" height="19" src="svg/entrance.svg" alt="Иконка входа">
-              <span class="button__text">Вход</span>
-            </button>
-          </a>
-        </li>
-        <li class="user-navigation__button">
-          <a href="#">
-            <button class="button" type="button">
-              <img width="21" height="20" src="svg/basket.svg" alt="Иконка корзины">
-              <span class="button__text">Пусто</span>
-            </button>
+          <a class="button" href="#">
+            <img width="21" height="20" src="svg/basket.svg" alt="Иконка корзины">
+            <span class="button__text">Пусто</span>
           </a>
         </li>
       </ul>
@@ -71,42 +63,52 @@
 
     <main class="main-content">
 
+
       <section class="main-content__slider slider">
 
         <h2 class="visually-hidden">Слайдер с фотографиями рожков с мороженым</h2>
 
         <ul class="slider__radio-inputs">
-          <li>
-            <input class="slider__radio" type="radio" name="image-slider" value="" data-url="img/double-icecream-01.png"
-              data-desc="Крем-брюле и пломбир с малиновым джемом" checked>
+          <li class="slider__radio-wrapper">
+            <label>
+              <input class="slider__input visually-hidden" type="radio" name="image-slider" value=""
+                data-url="img/double-icecream-01.png" data-desc="Крем-брюле и пломбир <br> с малиновым джемом" checked>
+              <span class="slider__checkbox"></span>
+            </label>
           </li>
-          <li>
-            <input class="slider__radio" type="radio" name="image-slider" value="" data-url="img/double-icecream-02.png"
-              data-desc="Шоколадный пломбир и лимонный сорбет">
+          <li class="slider__radio-wrapper">
+            <label>
+              <input class="slider__input visually-hidden" type="radio" name="image-slider" value=""
+                data-url="img/double-icecream-02.png" data-desc="Шоколадный пломбир и <br> лимонный сорбет">
+              <span class="slider__checkbox"></span>
+            </label>
           </li>
-          <li>
-            <input class="slider__radio" type="radio" name="image-slider" value="" data-url="img/double-icecream-03.png"
-              data-desc="Пломбир с помадкой и клубничный щербет">
+          <li class="slider__radio-wrapper">
+            <label>
+              <input class="slider__input visually-hidden" type="radio" name="image-slider" value=""
+                data-url="img/double-icecream-03.png" data-desc="Пломбир с помадкой и <br> клубничный щербет">
+              <span class="slider__checkbox"></span>
+            </label>
           </li>
         </ul>
 
         <figure class="slider__figure">
           <img class="slider__image" width="647" height="584" src="img/double-icecream-01.png" alt="">
-          <figcaption class="slider__image-capture">Крем-брюле и пломбир с малиновым джемом</figcaption>
-          <button class="button button--important" type="button">Давайте оба!</button>
+          <figcaption class="slider__image-capture">Крем-брюле и пломбир <br> с малиновым джемом</figcaption>
+          <button class="slider__button button button--important" type="button">Давайте оба!</button>
         </figure>
 
         <div class="slider__schedule">
-          <span class="slider__time">С 10 до 20, ежедневно</span><br>
-          <a class="slider__phone" href="tel:+7(495)495-49-54">+7(495)495-49-54</a>
+          <div class="slider__time">С 10 до 20, ежедневно</div>
+          <div class="slider__phone"><a href="tel:+7(495)495-49-54">+7(495)495-49-54</a></div>
         </div>
 
       </section>
 
 
-      <section class="blog">
+      <section class="main-content__stock stock">
 
-        <h2 class="visually-hidden">Посты блога компании</h2>
+        <h2 class="visually-hidden">Специальные предложения</h2>
 
         <article class="blog__article article">
           <p class="article__title">Малинка даром!</p>
@@ -125,7 +127,7 @@
       </section>
 
 
-      <section class="bestsellers">
+      <section class="main-content__bestsellers bestsellers">
 
         <h2 class="visually-hidden">Любимое народное мороженое</h2>
 
@@ -172,7 +174,7 @@
       </section>
 
 
-      <section class="features">
+      <section class="main-content__features features">
 
         <h2 class="visually-hidden">Описание преимуществ компании Gllacy</h2>
 
@@ -210,9 +212,9 @@
       </section>
 
 
-      <section class="blog">
+      <section class="main-content__blog blog">
 
-        <h2 class="visually-hidden">Блог компании</h2>
+        <h2 class="visually-hidden">Посты блога компании</h2>
 
         <article class="blog__article article">
           <span class="article__info">Новое в нашем блоге</span>
@@ -236,7 +238,7 @@
       </section>
 
 
-      <section class="map">
+      <section class="main-content__map map">
 
         <h2 class="visually-hidden">Местоположение компании на карте</h2>
 
