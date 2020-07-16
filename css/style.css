@@ -74,15 +74,19 @@ img {
 .button {
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	padding: 7px 15px;
-	border: none;
-	border-radius: 50px;
+	min-height: 20px;
 
+	text-align: center;
 	color: #ffffff;
 	font-size: 14px;
 	font-family: "robotomedium";
-
+	
 	background-color: #ffffff40;
+
+	border: none;
+	border-radius: 50px;
 }
 
 .button:hover {
@@ -122,6 +126,10 @@ img {
 
 	background-color: #f26843;
 	background-color: #e74a35;
+}
+
+.button--feedback {
+	width: 100%;
 }
 
 .button--align-end {
@@ -262,6 +270,7 @@ img {
 	width: 700px;
 
 	color: #ffffff;
+	text-shadow: 0 2px 5px #00000070;
 	font-family: "robotobold";
 	font-size: 60px;
 	line-height: 55px;
@@ -565,6 +574,8 @@ img {
 }
 
 .article__link {
+	align-self: start;
+
 	font-size: 24px;
 	line-height: 34px;
 
@@ -597,17 +608,47 @@ img {
 	background-image: url("../img/background-post.png");
 }
 
-.map {
+.main-content__map {
+	margin-top: 40px;
+}
+
+.main-content__map-wrapper {
 	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	height: 100%;
+}
+
+.map {
+	height: 430px;
+
+	background-image: url("../img/map.png");
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .map__image {
 }
+
 .map__form {
+	padding: 30px 25px;
+	border-radius: 15px;
+	width: 270px;
+
+	background-color: #fafafa;
 }
+
 .map__text {
+	margin: 0;
+	margin-bottom: 20px;
+	padding: 0;
+
+	line-height: 24px;
 }
+
 .map__bold-text {
+	font-size: 18px;
+	font-family: "robotobold";
 }
 
 .footer {
