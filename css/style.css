@@ -1,11 +1,11 @@
 /*
 	Порядок сортировки CSS свойств
-	1. Позиционирование
-	2. Блочная модель
-	3. Типографика
-	4. Оформление
-	5. Анимация
-	6. Разное
+	1. position
+	2. display
+	3. fonts
+	4. colors
+	5. animation
+	6. missalanious
 */
 
 @font-face {
@@ -96,6 +96,7 @@ img {
 .button--rounded {
 	padding: 7px;
 }
+
 .button--white {
 	color: #000000;
 
@@ -143,9 +144,6 @@ img {
 	display: flex;
 }
 
-.logo__image {
-}
-
 .site-header__site-navigation {
 	display: flex;
 	flex-wrap: wrap;
@@ -175,9 +173,6 @@ img {
 	color: #ffffff;
 }
 
-.site-navigation__logo {
-}
-
 .site-header__user-navigation {
 	display: flex;
 	flex-wrap: wrap;
@@ -193,9 +188,6 @@ img {
 
 .user-navigation__button:not(:last-of-type) {
 	margin-right: 10px;
-}
-
-.main-content {
 }
 
 .main-content__slider {
@@ -246,9 +238,6 @@ img {
 	cursor: pointer;
 }
 
-.slider__input {
-}
-
 .slider__input:focus + .slider__checkbox {
 	border: 2px solid #000000;
 }
@@ -262,9 +251,6 @@ img {
 
 	margin: 0;
 	padding: 0;
-}
-
-.slider__image {
 }
 
 .slider__image-capture {
@@ -314,12 +300,6 @@ img {
 	flex-wrap: wrap;
 }
 
-.blog {
-}
-
-.blog__article {
-}
-
 .article--raspberry {
 	background-image: url("../img/background-raspberry.jpg");
 	background-repeat: no-repeat;
@@ -353,33 +333,85 @@ img {
 
 .article__text {
 	height: 55px;
-	
+
 	font-size: 18px;
 
 	overflow-y: hidden;
 }
 
-.bestsellers {
+.main-content__bestsellers {
 	display: flex;
+	justify-content: space-between;
 	flex-wrap: wrap;
+	margin-top: 40px;
+}
+
+.bestsellers {
 }
 
 .bestsellers__card {
 }
+
 .card {
+	position: relative;
+
+	margin: 0;
+	padding: 0;
+	width: 280px;
+
+	color: #ffffff;
 }
+
+.card--hit::before {
+	position: absolute;
+
+	height: 61px;
+	width: 61px;
+
+	background-image: url("../svg/hit.svg");
+
+	content: "";
+}
+
 .card__image {
+	border-radius: 50%;
 }
+
 .card__price {
+	position: absolute;
+	bottom: 70px;
+	left: 0;
+
+	text-shadow: 0 1px 2px #00000070;
 }
+
 .card__price-number {
+	position: relative;
+
+	font-family: "robotobold";
+	font-size: 45px;
 }
+
 .card__price-ruble {
+	font-family: Arial;
+	font-size: 45px;
 }
+
 .card__price-measure {
+	font-family: "robotobold";
+	font-size: 25px;
 }
+
 .card__image-caption {
+	margin-top: 15px;
+
+	font-family: "robotomedium";
+	font-size: 16px;
+	line-height: 20px;
+	text-align: center;
+	text-decoration: underline #ffffff30;
 }
+
 .features {
 }
 .features__description {
