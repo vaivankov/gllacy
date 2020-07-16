@@ -412,14 +412,108 @@ img {
 	text-decoration: underline #ffffff30;
 }
 
+.main-content__features {
+	margin-top: 40px;	
+}
+
 .features {
+	padding: 30px 20px;
+	min-height: 245px;
+
+	font-size: 16px;
+	color: #202020;
+
+	background-color: #feffdb;
+	background-image: url("../background-wafer.jpg");
+	background-repeat: repeat;
+	
+	border-radius: 15px;
 }
+
 .features__description {
+	margin: 0;
+	padding: 0;
+	
+	font-family: "robotomedium";
+	font-size: 25px;
 }
+
 .features__list {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin: 0;
+	margin-top: 15px;
+	padding: 0;
+
+	list-style: none;
 }
+
+.features__list-item-wrapper {
+	position: relative;
+}
+
 .features__list-item {
+	width: 480px;
+	margin-left: 60px;
 }
+
+.features__list-item--ice-cream::before {
+	position: absolute;
+	top: 0;
+
+	margin-left: -60px;
+
+	height: 49px;
+	width: 49px;
+
+	background-image: url("../svg/ice-cream.svg");
+
+	content: '';
+}
+
+.features__list-item--cow::before {
+	position: absolute;
+	top: 0;
+
+	margin-left: -60px;
+
+	height: 49px;
+	width: 49px;
+
+	background-image: url("../svg/cow.svg");
+
+	content: '';
+}
+
+.features__list-item--eco::before {
+	position: absolute;
+	top: 0;
+
+	margin-left: -60px;
+
+	height: 49px;
+	width: 49px;
+
+	background-image: url("../svg/eco.svg");
+
+	content: '';
+}
+
+.features__list-item--thermometer::before {
+	position: absolute;
+	top: 0;
+
+	margin-left: -60px;
+
+	height: 49px;
+	width: 49px;
+
+	background-image: url("../svg/thermometer.svg");
+
+	content: '';
+}
+
 .article__info {
 }
 .article__link {
