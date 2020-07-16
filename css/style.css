@@ -82,7 +82,7 @@ img {
 	color: #ffffff;
 	font-size: 14px;
 	font-family: "robotomedium";
-	
+
 	background-color: #ffffff40;
 
 	border: none;
@@ -654,32 +654,75 @@ img {
 .footer {
 	display: flex;
 	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	min-height: 100px;
 }
 
 .footer__social {
+	width: 160px;
 }
+
 .social {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
+
 .social__icon {
 }
+
 .footer__links {
+	width: 340px;
 }
+
 .links {
+	display: flex;
+	flex-wrap: wrap;
 }
+
 .links__link {
+	position: relative;
+
+	min-width: 120px;
+	margin-bottom: 7px;
+	margin-right: 20px;
+
+	color: #ffffff;
+
+	text-decoration: underline #ffffff40;
 }
-.links__link-heart {
+
+.links__link-heart::before {
+	position: absolute;
+	top: 1px;
+	left: -20px;
+
+	height: 20px;
+	width: 20px;
+
+	background-image: url("../svg/heart.svg");
+	background-repeat: no-repeat;
+
+	content: '';
 }
+
 .footer__author {
 }
 
 .author {
-	display: flex;
 }
 
 .author__link {
+	color: #ffffff;
+	font-size: 16px;
 }
+
 .author__text {
 }
+
 .author__name {
+	margin-left: 10px;
+
+	font-family: "robotobold";
 }
