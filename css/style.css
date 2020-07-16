@@ -51,13 +51,13 @@ body {
 
 	font-family: "roboto", Arial, sans-serif;
 	font-size: 14px;
-	color: #000000;
+	color: #323232;
 
 	background-color: #849d8f;
 }
 
 a {
-	color: #000000;
+	color: #323232;
 	text-decoration: none;
 }
 
@@ -300,6 +300,10 @@ img {
 	flex-wrap: wrap;
 }
 
+.stock__article {
+	color: #ffffff;
+}
+
 .article--raspberry {
 	background-image: url("../img/background-raspberry.jpg");
 	background-repeat: no-repeat;
@@ -316,10 +320,9 @@ img {
 	border-radius: 15px;
 	padding: 20px;
 	width: 520px;
-	min-height: 185px;
+	min-height: 175px;
 
 	font-family: "robotobold";
-	color: #ffffff;
 
 	background-color: #505050;
 }
@@ -339,22 +342,31 @@ img {
 	overflow-y: hidden;
 }
 
+.article__text--subscribe {
+	height: auto;
+
+	font-size: 16px;
+}
+
 .main-content__bestsellers {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	margin-top: 40px;
 }
 
 .bestsellers {
 }
 
 .bestsellers__card {
+	margin-top: 40px;
 }
 
 .card {
 	position: relative;
 
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	margin: 0;
 	padding: 0;
 	width: 280px;
@@ -364,6 +376,8 @@ img {
 
 .card--hit::before {
 	position: absolute;
+	top: 0;
+	left: 0;
 
 	height: 61px;
 	width: 61px;
@@ -413,7 +427,7 @@ img {
 }
 
 .main-content__features {
-	margin-top: 40px;	
+	margin-top: 40px;
 }
 
 .features {
@@ -421,19 +435,19 @@ img {
 	min-height: 245px;
 
 	font-size: 16px;
-	color: #202020;
+	color: #323232;
 
 	background-color: #feffdb;
-	background-image: url("../background-wafer.jpg");
+	background-image: url("../img/background-wafer.jpg");
 	background-repeat: repeat;
-	
+
 	border-radius: 15px;
 }
 
 .features__description {
 	margin: 0;
 	padding: 0;
-	
+
 	font-family: "robotomedium";
 	font-size: 25px;
 }
@@ -469,7 +483,7 @@ img {
 
 	background-image: url("../svg/ice-cream.svg");
 
-	content: '';
+	content: "";
 }
 
 .features__list-item--cow::before {
@@ -483,7 +497,7 @@ img {
 
 	background-image: url("../svg/cow.svg");
 
-	content: '';
+	content: "";
 }
 
 .features__list-item--eco::before {
@@ -497,7 +511,7 @@ img {
 
 	background-image: url("../svg/eco.svg");
 
-	content: '';
+	content: "";
 }
 
 .features__list-item--thermometer::before {
@@ -511,16 +525,76 @@ img {
 
 	background-image: url("../svg/thermometer.svg");
 
-	content: '';
+	content: "";
+}
+
+.main-content__blog {
+	margin-top: 40px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.blog {
+}
+
+.article--new {
+	background-image: url("../img/background-strawberry.jpg");
+}
+
+.article__wrapper {
+	position: absolute;
+	left: 5px;
+	right: 5px;
+	top: 5px;
+	bottom: 5px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	padding: 10px 20px;
+
+	border-radius: 15px;
+	background-color: #eeeeee;
 }
 
 .article__info {
+	margin-bottom: 10px;
+
+	font-size: 16px;
 }
+
 .article__link {
+	font-size: 24px;
+	line-height: 34px;
+
+	text-decoration: underline;
 }
+
 .article__form {
+	display: flex;
+	margin-bottom: 15px;
 }
+
 .article__email-input {
+	flex-grow: 1;
+	margin-right: 10px;
+}
+
+.input {
+	padding: 10px 15px;
+
+	border: 1px solid #cccccc;
+	border-radius: 5px;
+}
+
+.article--subscribe {
+	position: relative;
+
+	font-family: "roboto";
+	font-size: 14px;
+
+	background-image: url("../img/background-post.png");
 }
 
 .map {

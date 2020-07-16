@@ -132,8 +132,8 @@
 
         <h2 class="visually-hidden">Любимое народное мороженое</h2>
 
-        <a href="#">
-          <figure class="bestsellers__card card card--hit">
+        <a class="bestsellers__card" href="#">
+          <figure class="card card--hit">
             <img class="card__image" width="267" height="267" src="img/preview-icecream-01.jpg" alt="">
             <div class="card__price" aria-label="Цена">
               <span class="card__price-number">310</span>
@@ -144,8 +144,8 @@
           </figure>
         </a>
 
-        <a href="#">
-          <figure class="bestsellers__card card card--hit">
+        <a class="bestsellers__card" href="#">
+          <figure class="card card--hit">
             <img class="card__image" width="267" height="267" src="img/preview-icecream-04.jpg" alt="">
             <div class="card__price" aria-label="Цена">
               <span class="card__price-number">380</span>
@@ -156,8 +156,8 @@
           </figure>
         </a>
 
-        <a href="#">
-          <figure class="bestsellers__card card card--hit">
+        <a class="bestsellers__card" href="#">
+          <figure class="card card--hit">
             <img class="card__image" width="267" height="267" src="img/preview-icecream-07.jpg" alt="">
             <div class="card__price" aria-label="Цена">
               <span class="card__price-number">355</span>
@@ -168,8 +168,8 @@
           </figure>
         </a>
 
-        <a href="#">
-          <figure class="bestsellers__card card card--hit">
+        <a class="bestsellers__card" href="#">
+          <figure class="card card--hit">
             <img class="card__image" width="267" height="267" src="img/preview-icecream-010.jpg" alt="">
             <div class="card__price" aria-label="Цена">
               <span class="card__price-number">415</span>
@@ -193,26 +193,30 @@
 
         <ul class="features__list">
           <li class="features__list-item-wrapper">
-            <p class="features__list-item features__list-item--ice-cream">Все наше мороженое изготавливается на собственном производстве, с
+            <p class="features__list-item features__list-item--ice-cream">Все наше мороженое изготавливается на
+              собственном производстве, с
               использованием современного оборудования
               и проверенных временем технологий.</p>
           </li>
 
           <li class="features__list-item-wrapper">
-            <p class="features__list-item features__list-item--cow">Закупка ингредиентов производится только у проверенных фермерских хозяйств и
+            <p class="features__list-item features__list-item--cow">Закупка ингредиентов производится только у
+              проверенных фермерских хозяйств и
               компаний, с которыми нас
               связывает долговременное сотрудничество.</p>
           </li>
 
           <li class="features__list-item-wrapper">
-            <p class="features__list-item features__list-item--eco">Для приготовления мороженого используются настоящие сливки и молоко
+            <p class="features__list-item features__list-item--eco">Для приготовления мороженого используются настоящие
+              сливки и молоко
               высочайшего
               качества. Все
               дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
           </li>
 
           <li class="features__list-item-wrapper">
-            <p class="features__list-item features__list-item--thermometer">Доставка нашего мороженого до заказчиков осуществляется в специальном
+            <p class="features__list-item features__list-item--thermometer">Доставка нашего мороженого до заказчиков
+              осуществляется в специальном
               термопаке, который не дает мороженому
               растаять в пути и позволяет сохранить превосходный вкус.</p>
           </li>
@@ -225,23 +229,23 @@
 
         <h2 class="visually-hidden">Посты блога компании</h2>
 
-        <article class="blog__article article">
+        <article class="blog__article article article--new">
           <span class="article__info">Новое в нашем блоге</span>
-          <a class="article__link" href="#">10 способов сервировки фруктовых щербетов к столу</a>
+          <a class="article__link" href="#">10 способов сервировки <br> фруктовых щербетов к <br> столу</a>
         </article>
 
-        <article class="blog__article article">
-          <p class="article__text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного,
-            что
-            у нас происходит.
-            Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-          <form class="article__form" action="https://echo.htmlacademy.ru" method="post">
-            <label class="visually-hidden" for="email-submit">Поле ввода почтового адреса для подписки на
-              новости</label>
-            <input class="article__email-input" type="email" name="email" placeholder="yourmail@mail.com"
-              id="email-submit" required>
-            <button class="button button--red" type="submit">Отправить</button>
-          </form>
+        <article class="blog__article article article--subscribe">
+          <div class="article__wrapper">
+            <p class="article__text article__text--subscribe">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного,
+              что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+            <form class="article__form" action="https://echo.htmlacademy.ru" method="post">
+              <label class="visually-hidden" for="email-submit">Поле ввода почтового адреса для подписки на
+                новости</label>
+              <input class="article__email-input input" type="email" name="email" placeholder="yourmail@mail.com"
+                id="email-submit" required>
+              <button class="button button--red" type="submit">Отправить</button>
+            </form>
+          </div>
         </article>
 
       </section>
