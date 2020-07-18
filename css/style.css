@@ -337,6 +337,10 @@ img {
 	padding: 0;
 }
 
+.slider__image {
+	background-image: radial-gradient(#ffffff98 1%, #849d8f 70%);
+}
+
 .slider__image-capture {
 	position: absolute;
 	top: 320px;
