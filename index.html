@@ -27,9 +27,9 @@
 
       <nav class="site-header__site-navigation site-navigation">
         <ul class="site-navigation">
-          <li class="site-navigation__item">
+          <li class="site-navigation__item site-navigation__item--menu">
             <a class="site-navigation__navigation-link" href="catalog.html">Каталог</a>
-            <ul class="site-navigation__menu">
+            <ul class="modal site-navigation__menu">
               <li><a class="site-navigation__menu-link site-navigation__menu-link--new" href="#">Новинки</a></li>
               <li><a class="site-navigation__menu-link" href="#">Сливочное</a></li>
               <li><a class="site-navigation__menu-link" href="#">Щербеты</a></li>
@@ -48,13 +48,18 @@
 
       <ul class="site-header__user-navigation user-navigation">
         <li class="user-navigation__list-item">
-          <button class="button button--rounded">
+          <button class="button button--rounded user-navigation__search-button">
             <svg class="button__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
               width="17" height="17" viewBox="0 0 17 17" aria-label="Иконка поиска">
               <path
                 d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z" />
             </svg>
           </button>
+          <div class="modal search-bar">
+            <form method="POST" action="https://echo.htmlacademy.ru">
+              <input class="search-bar__input" type="search" placeholder="Сливочное">
+            </form>
+          </div>
         </li>
         <li class="user-navigation__list-item">
           <button class="button">
@@ -345,6 +350,7 @@
 
   <!-- <script src="js/func__.js"></script> -->
   <script src="js/func__changeSliderImage.js"></script>
+  <script src="js/func__showModal.js"></script>
   <script src="js/variables.js"></script>
   <script src="js/handlers.js"></script>
 
