@@ -57,7 +57,6 @@ body {
 }
 
 a {
-	color: #323232;
 	text-decoration: none;
 }
 
@@ -77,14 +76,14 @@ img {
 	justify-content: center;
 	padding: 7px 15px;
 	min-height: 30px;
-
+	
 	text-align: center;
 	color: #ffffff;
 	font-size: 14px;
 	font-family: "robotomedium";
-
+	
 	background-color: #ffffff40;
-
+	
 	border: none;
 	border-radius: 50px;
 }
@@ -244,18 +243,20 @@ img {
 	border-radius: 50%;
 }
 
-.slider__checkbox:hover {
-	background-color: #ffffff30;
-
-	cursor: pointer;
-}
-
 .slider__input:focus + .slider__checkbox {
 	border: 2px solid #000000;
 }
 
 .slider__input:checked + .slider__checkbox {
 	background-color: #ffffff;
+}
+
+.slider__checkbox:hover {
+	cursor: pointer;
+}
+
+.slider__input:disabled .slider__checkbox {
+	border: 2px solid #ffffff;
 }
 
 .slider__figure {
@@ -450,7 +451,26 @@ img {
 	font-size: 16px;
 	line-height: 20px;
 	text-align: center;
+}
+
+.link {
+	color: #ffffff;
 	text-decoration: underline #ffffff30;
+}
+
+.link:hover {
+	color: #ffbc9e;
+	text-decoration: underline #ffbc9e30;
+}
+
+.link--black {
+	color: #323232;
+	text-decoration: underline #32323230;
+}
+
+.link--black:hover {
+	color: #e84d37;
+	text-decoration: underline #e84d3730;
 }
 
 .card__button {
@@ -739,7 +759,7 @@ img {
 
 .site-navigation__navigation-link:active,
 .button:active {
-	border-top: 2px solid #00000090;
+	/* border-top: 2px solid #00000090; */
 }
 
 .button--important {
@@ -749,18 +769,28 @@ img {
 	font-size: 32px;
 	text-shadow: 0 2px 5px #00000070;
 
-	background-color: #e74a35;
+	background-image: linear-gradient(to bottom, #f26843, #e74a35);
 	box-shadow: 0 2px 5px #00000070;
+}
+
+.button--red:hover,
+.button--important:hover {
+	background-color: #e06f60;
+	background-image: none;
+}
+
+.button--red:active,
+.button--important:active {
+	background-image: linear-gradient(to bottom, #e74a35, #f26843);
 }
 
 .button--red {
 	padding: 13px 20px;
-
+	
 	font-family: "robotobold";
 	font-size: 18px;
-
-	background-color: #f26843;
-	background-color: #e74a35;
+	
+	background-image: linear-gradient(to bottom, #f26843, #e74a35);
 }
 
 .button--current {
