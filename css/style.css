@@ -76,14 +76,14 @@ img {
 	justify-content: center;
 	padding: 7px 15px;
 	min-height: 30px;
-	
+
 	text-align: center;
 	color: #ffffff;
 	font-size: 14px;
 	font-family: "robotomedium";
-	
+
 	background-color: #ffffff40;
-	
+
 	border: none;
 	border-radius: 50px;
 }
@@ -136,10 +136,6 @@ img {
 	list-style: none;
 }
 
-.site-navigation li {
-	margin-right: 18px;
-}
-
 .site-navigation__navigation-link {
 	padding: 5px 15px;
 
@@ -153,8 +149,6 @@ img {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	padding: 5px 15px;
-	min-height: 20px;
 
 	text-align: center;
 	color: #000000;
@@ -165,14 +159,85 @@ img {
 	border-radius: 50px;
 }
 
+.site-navigation__item:first-of-type:hover .site-navigation__menu {
+	display: block;
+}
+
 .site-header__user-navigation {
 	display: flex;
 	flex-wrap: wrap;
 }
 
+.site-navigation__item {
+	position: relative;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 18px;
+	min-height: 64px;
+}
+
+.site-navigation__menu {
+	position: absolute;
+	top: 50px;
+	left: 0;
+
+	display: none;
+	margin: 0;
+	border-radius: 5px;
+	padding: 0;
+	min-width: 140px;
+
+	background-color: #f8f7f4;
+	box-shadow: 0 20px 20px #00000070;
+
+	list-style: none;
+	z-index: 9;
+	overflow: hidden;
+}
+
+.site-navigation__menu-link {
+	display: block;
+	margin: 0;
+	padding: 0 15px;
+
+	color: #000000;
+	line-height: 35px;
+}
+
+.site-navigation__menu-link:hover {
+	background-color: #fbded7;
+}
+
+.site-navigation__menu-link:active {
+	background-color: #f6b5a5;
+}
+
+.site-navigation__menu-link--new {
+	position: relative;
+
+	color: #000000;
+	font-family: "robotobold";
+}
+
+.site-navigation__menu-link--new::after {
+	position: absolute;
+	bottom: -1px;
+	left: 50%;
+	transform: translate(-50%, 0);
+
+	height: 1px;
+	width: 90%;
+
+	border-bottom: 1px solid #00000030;
+
+	content: '';
+}
+
 .user-navigation {
 	left: 0;
-	
+
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -193,7 +258,7 @@ img {
 
 .user-navigation__list-item:hover .button {
 	color: #000000;
-	
+
 	background-color: #f7f6f3;
 }
 
@@ -757,11 +822,6 @@ img {
 	font-family: "robotobold";
 }
 
-.site-navigation__navigation-link:active,
-.button:active {
-	/* border-top: 2px solid #00000090; */
-}
-
 .button--important {
 	padding: 15px 40px;
 
@@ -786,10 +846,10 @@ img {
 
 .button--red {
 	padding: 13px 20px;
-	
+
 	font-family: "robotobold";
 	font-size: 18px;
-	
+
 	background-image: linear-gradient(to bottom, #f26843, #e74a35);
 }
 
