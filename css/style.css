@@ -76,7 +76,7 @@ img {
 	align-items: center;
 	justify-content: center;
 	padding: 7px 15px;
-	min-height: 20px;
+	min-height: 30px;
 
 	text-align: center;
 	color: #ffffff;
@@ -91,6 +91,10 @@ img {
 
 .button:hover {
 	cursor: pointer;
+}
+
+.button__image {
+	fill: #ffffff;
 }
 
 .button__text {
@@ -117,6 +121,7 @@ img {
 	display: flex;
 	flex-wrap: wrap;
 	flex-grow: 1;
+	min-height: 64px;
 }
 
 .site-navigation {
@@ -127,19 +132,13 @@ img {
 	margin-top: -5px;
 	padding: 0;
 	width: 500px;
-	height: 64px;
+	min-height: 64px;
 
 	list-style: none;
 }
 
 .site-navigation li {
-	position: relative;
-
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	margin-right: 18px;
-	height: 100%;
 }
 
 .site-navigation__navigation-link {
@@ -167,25 +166,40 @@ img {
 	border-radius: 50px;
 }
 
-.site-navigation__navigation-link:active {
-	border-top: 2px solid #00000090;
-}
-
 .site-header__user-navigation {
 	display: flex;
 	flex-wrap: wrap;
 }
 
 .user-navigation {
+	left: 0;
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	margin: 0;
 	margin-top: -5px;
-	left: 0;
+	min-height: 64px;
 
 	list-style: none;
 }
 
-.user-navigation__button:not(:last-of-type) {
+.user-navigation__list-item {
+	height: 100%;
+}
+
+.user-navigation__list-item:not(:last-of-type) {
 	margin-right: 10px;
+}
+
+.user-navigation__list-item:hover .button {
+	color: #000000;
+	
+	background-color: #f7f6f3;
+}
+
+.user-navigation__list-item:hover .button__image {
+	fill: #000000;
 }
 
 .main-content__slider {
@@ -300,6 +314,8 @@ img {
 }
 
 .stock__article {
+	margin-top: 15px;
+
 	color: #ffffff;
 }
 
@@ -351,9 +367,6 @@ img {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-}
-
-.bestsellers {
 }
 
 .bestsellers__card {
@@ -548,13 +561,14 @@ img {
 }
 
 .main-content__blog {
-	margin-top: 40px;
+	margin-top: 25px;
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
 }
 
-.blog {
+.blog__article {
+	margin-top: 15px;
 }
 
 .article--new {
@@ -638,9 +652,6 @@ img {
 	background-size: cover;
 }
 
-.map__image {
-}
-
 .map__form {
 	padding: 30px 25px;
 	border-radius: 15px;
@@ -680,9 +691,6 @@ img {
 	justify-content: space-between;
 }
 
-.social__icon {
-}
-
 .footer__links {
 	width: 340px;
 }
@@ -718,24 +726,20 @@ img {
 	content: "";
 }
 
-.footer__author {
-}
-
-.author {
-}
-
 .author__link {
 	color: #ffffff;
 	font-size: 16px;
-}
-
-.author__text {
 }
 
 .author__name {
 	margin-left: 10px;
 
 	font-family: "robotobold";
+}
+
+.site-navigation__navigation-link:active,
+.button:active {
+	border-top: 2px solid #00000090;
 }
 
 .button--important {
