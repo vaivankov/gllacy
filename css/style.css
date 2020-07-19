@@ -449,6 +449,10 @@ img {
 	font-size: 16px;
 }
 
+.main-content__goods {
+	margin-bottom: 100px;
+}
+
 .main-content__goods,
 .main-content__bestsellers {
 	display: flex;
@@ -784,11 +788,27 @@ img {
 }
 
 .footer {
+	position: relative;
+	
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: space-between;
 	min-height: 100px;
+}
+
+.footer::after {
+	position: absolute;
+	top: -1px;
+	left: 50%;
+	transform: translate(-50%, 0);
+
+	height: 1px;
+	width: 100%;
+
+	border-top: 1px solid #ffffff40;
+
+	content: "";
 }
 
 .footer__social {
