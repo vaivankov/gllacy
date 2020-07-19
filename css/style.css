@@ -899,6 +899,16 @@ img {
 	align-self: flex-end;
 }
 
+.button--basket-full {
+	color: #000000;
+
+	background-color: #f7f6f3;
+}
+
+.button--basket-full .button__image {
+	fill: #000000;
+}
+
 .search-bar {
 	top: 60px;
 	right: 0;
@@ -953,7 +963,7 @@ img {
 .basket {
 	top: 60px;
 	right: 0;
-	
+
 	padding: 20px 15px;
 	width: 500px;
 }
