@@ -449,21 +449,25 @@ img {
 	font-size: 16px;
 }
 
+.main-content__goods,
 .main-content__bestsellers {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
 }
 
+.goods__card,
 .bestsellers__card {
 	padding: 3px;
 	margin-top: 40px;
 }
 
+.goods__card:hover > .card__button,
 .bestsellers__card:hover > .card__button {
 	display: block;
 }
 
+.goods__card:hover,
 .bestsellers__card:hover {
 	position: relative;
 
@@ -477,6 +481,7 @@ img {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	justify-content: center;
 	margin: 0;
 	padding: 0;
 	width: 280px;
@@ -529,8 +534,8 @@ img {
 
 .card__image-caption {
 	display: flex;
-	align-self: flex-end;
 	margin-top: 15px;
+	width: 250px;
 
 	font-family: "robotomedium";
 	font-size: 16px;
