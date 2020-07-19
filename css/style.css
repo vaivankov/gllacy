@@ -453,7 +453,7 @@ img {
 	margin-bottom: 100px;
 }
 
-.main-content__goods,
+.goods-wrapper,
 .main-content__bestsellers {
 	display: flex;
 	justify-content: space-between;
