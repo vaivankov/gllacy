@@ -72,8 +72,6 @@ img {
 
 .modal {
 	position: absolute;
-	top: 0;
-	left: 0;
 
 	display: none;
 	margin: 0;
@@ -91,7 +89,6 @@ img {
 	align-items: center;
 	justify-content: center;
 	padding: 7px 15px;
-	min-height: 30px;
 
 	text-align: center;
 	color: #ffffff;
@@ -109,6 +106,8 @@ img {
 }
 
 .button__image {
+	min-height: 21px;
+
 	fill: #ffffff;
 }
 
@@ -173,6 +172,10 @@ img {
 	border-radius: 50px;
 }
 
+.user-navigation__list-item:hover > .login,
+.user-navigation__list-item:hover > .search-bar,
+.user-navigation__login-button:focus + .login,
+.user-navigation__search-button:focus + .search-bar,
 .site-navigation__navigation-link:focus + .site-navigation__menu,
 .site-navigation__item--menu:hover .site-navigation__menu {
 	display: block;
@@ -194,8 +197,10 @@ img {
 }
 
 .site-navigation__menu {
+	top: 60px;
+	left: 0;
+
 	min-width: 140px;
-	top: 50px;
 
 	list-style: none;
 	overflow: hidden;
@@ -255,14 +260,17 @@ img {
 .user-navigation__list-item {
 	position: relative;
 
-	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 64px;
 }
 
 .user-navigation__list-item:not(:last-of-type) {
 	margin-right: 10px;
 }
 
-.user-navigation__list-item:hover .button {
+.user-navigation__list-item:hover .button:not(.button--red) {
 	color: #000000;
 
 	background-color: #f7f6f3;
@@ -890,8 +898,7 @@ img {
 }
 
 .search-bar {
-	top: 40px;
-	left: initial;
+	top: 60px;
 	right: 0;
 
 	padding: 20px 15px;
@@ -905,6 +912,38 @@ img {
 	border-radius: 5px;
 }
 
-.show {
-	display: block;
+.login {
+	top: 60px;
+	right: 0;
+
+	padding: 20px 15px;
+}
+
+.login__line:not(:last-of-type) {
+	margin-bottom: 20px;
+}
+
+.login__line--controls {
+	display: flex;
+}
+
+.login__input {
+	width: 200px;
+}
+
+.login__password {
+	width: 200px;
+}
+
+.login__submit-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 10px;
+}
+
+.login__help-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
 }
