@@ -1,9 +1,9 @@
 'use strict';
 
 (function () {
-  window.showModal = function () {
-    let parent = searchButton.closest('.user-navigation__list-item');
-    let modal = parent.querySelector('.modal');
+  window.showModal = function (obj) {
+    let win = obj.dataset.window;
+    let modal = document.querySelector(win);
     modal.classList.toggle('show');
   }
 }

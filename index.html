@@ -112,12 +112,12 @@
         </li>
 
         <li class="user-navigation__list-item">
-          
+
           <button class="button button--basket-full user-navigation__basket-button" type="button">
             <svg class="button__image" xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20"
               aria-label="Иконка корзины">
               <g>
-                <path 
+                <path
                   d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z" />
                 <circle cx="6.984" cy="18" r="2" />
                 <circle cx="15.984" cy="18" r="2" />
@@ -125,70 +125,70 @@
             </svg>
             <span class="button__text">2 товара</span>
           </button>
-          
+
           <div class="modal basket">
-          
+
             <form method="POST" action="https://echo.htmlacademy.ru">
-          
+
               <div class="basket__line basket__line--item">
-          
+
                 <div class="basket__button-wrapper">
                   <button class="basket__button" type="button">
                     <span class="visually-hidden">Удалить товар</span>
                     <img class="basket__close" src="svg/cross-big.svg" alt="Иконка удаления">
                   </button>
                 </div>
-          
+
                 <figure class="basket__image-wrapper">
                   <img class="basket__image" width="35" height="35" src="img/preview-icecream-01.jpg"
                     alt="Фото мороженого">
                   <figcaption class="basket__image-caption">Пломбир с апельсиновым джемом</figcaption>
                 </figure>
-          
+
                 <div class="basket__amount">
                   <p> 1,5 кг х <span class="basket__amount-price">200 руб.</span> </p>
                 </div>
-          
+
                 <div class="basket__price">
                   <p> 300 руб.</p>
                 </div>
               </div>
 
               <div class="basket__line basket__line--item">
-          
+
                 <div class="basket__button-wrapper">
                   <button class="basket__button" type="button">
                     <span class="visually-hidden">Удалить товар</span>
                     <img class="basket__close" src="svg/cross-big.svg" alt="Иконка удаления">
                   </button>
                 </div>
-          
+
                 <figure class="basket__image-wrapper">
                   <img class="basket__image" width="35" height="35" src="img/preview-icecream-07.jpg"
                     alt="Фото мороженого">
                   <figcaption class="basket__image-caption">Клубничный пломбир с присыпкой из белого шоколада
                   </figcaption>
                 </figure>
-          
+
                 <div class="basket__amount">
                   <p> 1,5 кг х <span class="basket__amount-price">300 руб.</span> </p>
                 </div>
-          
+
                 <div class="basket__price">
                   <p> 450 руб.</p>
                 </div>
               </div>
-          
+
               <div class="basket__line basket__line--price">
                 <p>Итого: 750 руб. </p>
               </div>
-          
+
               <div class="basket__line basket__line--submit">
                 <button class="button button--red basket__submit" type="submit">Оформить заказ</button>
               </div>
-          
+
             </form>
-          
+
           </div>
         </li>
 
@@ -424,7 +424,7 @@
           (с 10 до 20 ежедневно)
         </p>
 
-        <button class="button button--feedback button--red" type="button">Форма обратной связи</button>
+        <button class="button button--feedback button--red" type="button" data-window=".feedback">Форма обратной связи</button>
 
       </div>
 
@@ -461,7 +461,40 @@
 
   </footer>
 
+  <div class="feedback">
+    <form class="feedback-form" method="POST" action="https://echo.htmlacademy.ru">
+      <div class="feedback-form__line">
+        <p class="feedback-form__title">Мы обязательно вам ответим!</p>
+        <button class="feedback-form__close" type="button" data-window=".feedback">
+          <span class="visually-hidden">Закрыть форму обратной связи</span>
+          <img width="18" height="17" src="svg/cross-big.svg" alt="Иконка закрытия">
+        </button>
+      </div>
+      <div class="feedback-form__line">
+        <label class="visually-hidden" for="feedback-form__name">Адрес электронной почты</label>
+        <input class="feedback-form__name input" id="feedback-form__name" name="name" type="text" placeholder="Имя Фамилия"
+          required>
+      </div>
+      <div class="feedback-form__line">
+        <label class="visually-hidden" for="feedback-form__mail">Адрес электронной почты</label>
+        <input class="feedback-form__mail input" id="feedback-form__mail" name="email" type="email"
+          placeholder="yourmail@mail.com" required>
+      </div>
+      <div class="feedback-form__line">
+        <label class="visually-hidden" for="feedback-form__textarea">Поле поиска</label>
+        <textarea class="feedback-form__textarea input" name="message" id="feedback-form__textarea" cols="60" rows="9"
+          placeholder="В свободной форме" required></textarea>
+      </div>
+      <div class="feedback-form__line feedback-form__line-submit">
+        <button class="button button--red" type="submit">Отправить</button>
+      </div>
+    </form>
+    <div class="feedback-background" data-window=".feedback"></div>
+  </div>
+
   <!-- <script src="js/func__.js"></script> -->
+  <script src="js/func__showModal.js"></script>
+  <script src="js/func__closeModal.js"></script>
   <script src="js/func__changeSliderImage.js"></script>
   <script src="js/variables.js"></script>
   <script src="js/handlers.js"></script>
