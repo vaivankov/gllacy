@@ -58,6 +58,7 @@
 
         <li class="user-navigation__list-item">
           <button class="button button--rounded user-navigation__search-button" type="button">
+            <span class="visually-hidden">Поиск по сайту</span>
             <svg class="button__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
               width="17" height="17" viewBox="0 0 17 17" aria-label="Иконка поиска">
               <path
@@ -66,13 +67,15 @@
           </button>
           <div class="modal search-bar">
             <form method="POST" action="https://echo.htmlacademy.ru">
-              <input class="search-bar__input" type="search" placeholder="Сливочное">
+              <label class="visually-hidden" for="search-bar__input">Поле поиска</label>
+              <input class="search-bar__input" id="search-bar__input" type="search" placeholder="Сливочное">
             </form>
           </div>
         </li>
 
         <li class="user-navigation__list-item">
           <button class="button user-navigation__login-button" type="button">
+            <span class="visually-hidden">Вход на сайт под именем</span>
             <svg class="button__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
               width="21" height="19" viewBox="0 0 21 19" aria-label="Иконка входа">
               <g>
@@ -86,14 +89,14 @@
           <div class="modal login">
             <form method="POST" action="https://echo.htmlacademy.ru">
               <div class="login__line">
-                <label class="visually-hidden" for="#login__input">Адрес электронной почты</label>
-                <input class="login__input input" id="login__input" name="email" type="email" placeholder="yourmail@mail.com"
-                  required>
+                <label class="visually-hidden" for="login__input">Адрес электронной почты</label>
+                <input class="login__input input" id="login__input" name="email" type="email"
+                  placeholder="yourmail@mail.com" required>
               </div>
               <div class="login__line">
-                <label class="visually-hidden" for="#login__password">Адрес электронной почты</label>
-                <input class="login__password input" id="login__password" name="password" type="password" placeholder="••••••••••••"
-                  required>
+                <label class="visually-hidden" for="login__password">Адрес электронной почты</label>
+                <input class="login__password input" id="login__password" name="password" type="password"
+                  placeholder="••••••••••••" required>
               </div>
               <div class="login__line login__line--controls">
                 <div class="login__submit-wrapper">
@@ -109,7 +112,8 @@
         </li>
 
         <li class="user-navigation__list-item">
-          <button class="button" type="button">
+          
+          <button class="button user-navigation__basket-button" type="button">
             <svg class="button__image" xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20"
               aria-label="Иконка корзины">
               <g>
@@ -121,28 +125,70 @@
             </svg>
             <span class="button__text">Пусто</span>
           </button>
-          <div class="modal login">
+          
+          <div class="modal basket">
+          
             <form method="POST" action="https://echo.htmlacademy.ru">
-              <div class="login__line">
-                <label class="visually-hidden" for="#login__input">Адрес электронной почты</label>
-                <input class="login__input input" id="login__input" name="email" type="email" placeholder="yourmail@mail.com"
-                  required>
-              </div>
-              <div class="login__line">
-                <label class="visually-hidden" for="#login__password">Адрес электронной почты</label>
-                <input class="login__password input" id="login__password" name="password" type="password" placeholder="••••••••••••"
-                  required>
-              </div>
-              <div class="login__line login__line--controls">
-                <div class="login__submit-wrapper">
-                  <button class="button button--red" type="submit">Оформить заказ</button>
+          
+              <div class="basket__line basket__line--item">
+          
+                <div class="basket__button-wrapper">
+                  <button class="basket__button" type="button">
+                    <span class="visually-hidden">Удалить товар</span>
+                    <img class="basket__close" src="svg/cross-big.svg" alt="Иконка удаления">
+                  </button>
                 </div>
-                <div class="login__help-wrapper">
-                  <a class="link link--black" href="#">Забыли пароль?</a>
-                  <a class="link link--black" href="#">Новая регистрация</a>
+          
+                <figure class="basket__image-wrapper">
+                  <img class="basket__image" width="35" height="35" src="img/preview-icecream-01.jpg"
+                    alt="Фото мороженого">
+                  <figcaption class="basket__image-caption">Пломбир с апельсиновым джемом</figcaption>
+                </figure>
+          
+                <div class="basket__amount">
+                  <p> 1,5 кг х <span class="basket__amount-price">200 руб.</span> </p>
+                </div>
+          
+                <div class="basket__price">
+                  <p> 300 руб.</p>
                 </div>
               </div>
+
+              <div class="basket__line basket__line--item">
+          
+                <div class="basket__button-wrapper">
+                  <button class="basket__button" type="button">
+                    <span class="visually-hidden">Удалить товар</span>
+                    <img class="basket__close" src="svg/cross-big.svg" alt="Иконка удаления">
+                  </button>
+                </div>
+          
+                <figure class="basket__image-wrapper">
+                  <img class="basket__image" width="35" height="35" src="img/preview-icecream-07.jpg"
+                    alt="Фото мороженого">
+                  <figcaption class="basket__image-caption">Клубничный пломбир с присыпкой из белого шоколада
+                  </figcaption>
+                </figure>
+          
+                <div class="basket__amount">
+                  <p> 1,5 кг х <span class="basket__amount-price">300 руб.</span> </p>
+                </div>
+          
+                <div class="basket__price">
+                  <p> 450 руб.</p>
+                </div>
+              </div>
+          
+              <div class="basket__line basket__line--price">
+                <p>Итого: 700 руб. </p>
+              </div>
+          
+              <div class="basket__line basket__line--submit">
+                <button class="button button--red basket__submit" type="submit">Оформить заказ</button>
+              </div>
+          
             </form>
+          
           </div>
         </li>
 
