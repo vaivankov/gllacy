@@ -132,8 +132,6 @@ img {
 	min-height: 64px;
 }
 
-
-
 .site-header__logo {
 	margin-right: 22px;
 }
@@ -236,7 +234,7 @@ img {
 
 .site-navigation__menu-link:hover:not(.site-navigation__menu-link--current) {
 	color: #000000;
-	
+
 	background-color: #fbded7;
 }
 
@@ -588,7 +586,7 @@ img {
 	text-decoration: underline #ffffff30;
 }
 
-.link:hover {
+.link:hover:not(.link--current) {
 	color: #ffbc9e;
 	text-decoration: underline #ffbc9e30;
 }
@@ -1276,4 +1274,123 @@ img {
 	border: none;
 
 	background-color: transparent;
+}
+
+.catalog-main-content__header {
+	margin-bottom: 10px;
+}
+
+.subheader {
+	display: flex;
+	justify-content: space-between;
+}
+
+.site-subnavigation {
+	display: flex;
+	align-self: flex-end;
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+
+.site-subnavigation__item {
+	position: relative;
+
+	margin-right: 30px;
+}
+
+.site-subnavigation__navigation-link {
+}
+
+.site-subnavigation__item:not(:last-child)::after {
+	position: absolute;
+	top: 50%;
+	right: -22px;
+	transform: translate(0, -50%) scale(0.8);
+
+	width: 13px;
+	height: 12px;
+
+	background-image: url("../svg/icon-right-small.svg"),
+		url("../svg/icon-right-small.svg");
+	background-position: 0 0, 5px 0;
+	background-repeat: no-repeat;
+
+	content: "";
+}
+
+.catalog-main-content__filter {
+}
+
+.filter {
+}
+
+.filter__form {
+}
+
+.filter__fieldset {
+}
+
+.filter__title {
+}
+
+.filter__sort {
+}
+
+.filter__sort-label {
+}
+
+.filter__sort-select {
+}
+
+.filter__price {
+}
+
+.filter__price-label {
+}
+
+.filter__price-min {
+}
+
+.filter__price-max {
+}
+
+.filter__input-slider {
+}
+
+.filter__price-input {
+}
+
+.filter__fatness {
+}
+
+.filter__fatness-label {
+}
+
+.filter__fatness-list {
+}
+
+.filter__fatness-list-item {
+}
+
+.filter__fatness-list-input {
+}
+
+.filter__filler {
+}
+
+.filter__filler-label {
+}
+
+.filter__filler-list {
+}
+
+.filter__filler-list-item {
+}
+
+.filter__filler-list-input {
+}
+
+.button--filter {
 }
