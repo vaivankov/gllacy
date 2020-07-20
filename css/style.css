@@ -26,6 +26,16 @@
 	src: url(../fonts/robotomedium.woff2);
 }
 
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden,
 .visually-hidden:not(:focus):not(:active) {
@@ -432,8 +442,8 @@ img {
 	flex-direction: column;
 	border-radius: 15px;
 	padding: 20px;
-	width: 520px;
-	min-height: 175px;
+	width: 560px;
+	min-height: 220px;
 
 	font-family: "robotobold";
 
@@ -805,7 +815,7 @@ img {
 .map__form {
 	padding: 30px 25px;
 	border-radius: 15px;
-	width: 270px;
+	width: 300px;
 
 	background-color: #fafafa;
 }
@@ -986,6 +996,7 @@ img {
 	right: 0;
 
 	padding: 20px 15px;
+	min-width: 260px;
 }
 
 .login__line:not(:last-of-type) {
@@ -997,11 +1008,11 @@ img {
 }
 
 .login__input {
-	width: 200px;
+	width: 240px;
 }
 
 .login__password {
-	width: 200px;
+	width: 240px;
 }
 
 .login__submit-wrapper {
