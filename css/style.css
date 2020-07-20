@@ -1220,7 +1220,9 @@ img {
 }
 
 .goods-controls__button {
-	margin: 0 5px;
+	margin: 0;
+	height: 30px;
+	width: 30px;
 
 	color: #ffffff;
 
@@ -1247,6 +1249,8 @@ img {
 .goods-controls__control {
 	display: flex;
 	align-items: center;
+	height: 30px;
+	width: 30px;
 
 	border: none;
 
