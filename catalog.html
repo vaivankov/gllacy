@@ -224,15 +224,15 @@
     </section>
 
     <section class="catalog-main-content__filter filter container">
-      <form method="POST" action="https://echo.htmlacademy.ru">
+      <form class="filter__form" method="POST" action="https://echo.htmlacademy.ru">
 
-        <fieldset>
+        <fieldset class="filter__fieldset">
 
-          <legend>Сливочное мороженое</legend>
+          <legend class="filter__title">Сливочное мороженое</legend>
 
-          <div>
-            <label for="">Сортировка:</label>
-            <select name="" id="">
+          <div class="filter__sort">
+            <label class="filter__sort-label" for="filter-sort">Сортировка:</label>
+            <select class="filter__sort-select" name="filter-sort" id="filter-sort">
               <option value="popularity">по популярности</option>
               <option value="cheap">сначала недорогие</option>
               <option value="expansive">сначала дорогие</option>
@@ -240,34 +240,54 @@
             </select>
           </div>
 
-          <div>
-            <label for="">Цена: <span>100</span> - <span>500</span> руб.</label>
-            <input type="range" min="100" max="500">
-            <input type="range" min="100" max="500">
+          <div class="filter__price">
+            <label class="filter__price-label" for="input-slider">Цена: <span class="filter__price-min">100</span> - <span class="filter__price-max">500</span> руб.</label>
+            <div class="filter__input-slider" id="input-slider">
+              <input class="filter__price-input" type="range" min="100" max="500" step="5">
+              <input class="filter__price-input" type="range" min="100" max="500" step="5">
+            </div>
           </div>
 
-          <div>
-            <label for="">Жирность:</label>
-            <ul>
-              <li><input name="fatness-percent" type="radio">0%</li>
-              <li><input name="fatness-percent" type="radio">до 10%</li>
-              <li><input name="fatness-percent" type="radio">до 30%</li>
-              <li><input name="fatness-percent" type="radio">выше 30%</li>
+          <div class="filter__fatness">
+            <label class="filter__fatness-label" for="fatness-list">Жирность:</label>
+            <ul class="filter__fatness-list" id="fatness-list">
+              <li class="filter__fatness-list-item">
+                <input class="filter__fatness-list-input" name="fatness-percent" type="radio">0%
+              </li>
+              <li class="filter__fatness-list-item">
+                <input class="filter__fatness-list-input" name="fatness-percent" type="radio">до 10%
+              </li>
+              <li class="filter__fatness-list-item">
+                <input class="filter__fatness-list-input" name="fatness-percent" type="radio">до 30%
+              </li>
+              <li class="filter__fatness-list-item">
+                <input class="filter__fatness-list-input" name="fatness-percent" type="radio">выше 30%
+              </li>
             </ul>
           </div>
 
-          <div>
-            <label for="">Наполнители:</label>
-            <ul>
-              <li><input type="checkbox" name="chocolate" checked>шоколадные</li>
-              <li><input type="checkbox" name="sugar" checked>сахарные присыпки</li>
-              <li><input type="checkbox" name="fruits">фрукты</li>
-              <li><input type="checkbox" name="syrups">сиропы</li>
-              <li><input type="checkbox" name="jams">джемы</li>
+          <div class="filter__filler">
+            <label class="filter__filler-label" for="filler-list">Наполнители:</label>
+            <ul class="filter__filler-list" id="filler-list">
+              <li class="filter__filler-list-item">
+                <input class="filter__filler-list-input" type="checkbox" name="chocolate" checked>шоколадные
+              </li>
+              <li class="filter__filler-list-item">
+                <input class="filter__filler-list-input" type="checkbox" name="sugar" checked>сахарные присыпки
+              </li>
+              <li class="filter__filler-list-item">
+                <input class="filter__filler-list-input" type="checkbox" name="fruits">фрукты
+              </li>
+              <li class="filter__filler-list-item">
+                <input class="filter__filler-list-input" type="checkbox" name="syrups">сиропы
+              </li>
+              <li class="filter__filler-list-item">
+                <input class="filter__filler-list-input" type="checkbox" name="jams">джемы
+              </li>
             </ul>
           </div>
 
-          <button type="submit">Применить</button>
+          <button class="button button--filter" type="submit">Применить</button>
 
         </fieldset>
       </form>
