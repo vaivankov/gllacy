@@ -29,11 +29,11 @@
       <ul class="site-navigation">
 
         <li class="site-navigation__item site-navigation__item--menu">
-          <a class="site-navigation__navigation-link button button--current" href="catalog.html">Каталог</a>
+          <span class="site-navigation__navigation-link button button--current" tabindex="0">Каталог</span>
 
           <ul class="modal site-navigation__menu">
             <li><a class="site-navigation__menu-link site-navigation__menu-link--new" href="#">Новинки</a></li>
-            <li><a class="site-navigation__menu-link" href="#">Сливочное</a></li>
+            <li><a class="site-navigation__menu-link site-navigation__menu-link--current">Сливочное</a></li>
             <li><a class="site-navigation__menu-link" href="#">Щербеты</a></li>
             <li><a class="site-navigation__menu-link" href="#">Фруктовый лёд</a></li>
             <li><a class="site-navigation__menu-link" href="#">Мелорин</a></li>
@@ -42,11 +42,11 @@
         </li>
 
         <li class="site-navigation__item">
-          <a class="site-navigation__navigation-link" href="#">Доставка и оплата</a>
+          <span class="site-navigation__navigation-link" tabindex="0">Доставка и оплата</span>
         </li>
 
         <li class="site-navigation__item">
-          <a class="site-navigation__navigation-link" href="#">О Компании</a>
+          <span class="site-navigation__navigation-link" tabindex="0">О Компании</span>
         </li>
 
       </ul>
@@ -92,7 +92,7 @@
                 placeholder="yourmail@mail.com" required>
             </div>
             <div class="login__line">
-              <label class="visually-hidden" for="login__password">Адрес электронной почты</label>
+              <label class="visually-hidden" for="login__password">Пароль</label>
               <input class="login__password input" id="login__password" name="password" type="password"
                 placeholder="••••••••••••" required>
             </div>
