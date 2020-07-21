@@ -126,6 +126,18 @@ img {
 	margin-left: 7px;
 }
 
+.radial-gradient {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, -10%);
+
+	width: 1000px;
+	height: 1000px;
+
+	background-image: radial-gradient(#d8ffe9 1%, #ffffff00 70%);
+}
+
 .site-header {
 	display: flex;
 	align-items: center;
@@ -369,7 +381,6 @@ img {
 	width: 647px;
 	height: 584px;
 	
-	background-image: radial-gradient(#ffffff98 1%, #849d8f 70%);
 }
 
 .slider__image-capture {
@@ -421,6 +432,8 @@ img {
 	margin-top: 15px;
 
 	color: #ffffff;
+
+	z-index: 9;
 }
 
 .article--raspberry {
