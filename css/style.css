@@ -135,6 +135,8 @@ img {
 
 .site-header__logo {
 	margin-right: 22px;
+	width: 154px;
+	height: 64px;
 }
 
 .logo {
@@ -364,9 +366,9 @@ img {
 
 	margin: 0;
 	padding: 0;
-}
-
-.slider__image {
+	width: 647px;
+	height: 584px;
+	
 	background-image: radial-gradient(#ffffff98 1%, #849d8f 70%);
 }
 
@@ -441,7 +443,7 @@ img {
 
 	font-family: "robotobold";
 
-	background-color: #505050;
+	background-color: #777777;
 }
 
 .article__title {
@@ -517,9 +519,19 @@ img {
 	margin: 0;
 	padding: 0;
 	width: 280px;
-	min-height: 322px;
+	height: 322px;
 
 	color: #ffffff;
+}
+
+.card__image-wrapper {
+	width: 267px;
+	height: 267px;
+
+	border: 7px solid #ffffff70;
+	border-radius: 50%;
+
+	background-color: #777777;
 }
 
 .card--hit::before {
@@ -536,17 +548,9 @@ img {
 	z-index: 9;
 }
 
-.card__image-wrapper {
-	position: relative;
-}
-
-.card__image {
-	border-radius: 50%;
-}
-
 .card__price {
 	position: absolute;
-	bottom: 20px;
+	bottom: 80px;
 	left: 0;
 
 	text-shadow: 0 1px 2px #00000070;
@@ -804,6 +808,8 @@ img {
 	background-image: url("../img/map.png");
 	background-repeat: no-repeat;
 	background-size: cover;
+
+	background-color: #777777;
 }
 
 .map__form {
@@ -852,13 +858,25 @@ img {
 }
 
 .footer__social {
-	width: 160px;
+	width: 180px;
 }
 
 .social {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+}
+
+.social__icon {
+	width: 40px;
+	height: 40px;
+
+	border: 4px solid #ffffff30;
+	border-radius: 50%;
+}
+
+.social__icon:hover .social__icon-filler {
+	fill: #ffffff;
 }
 
 .footer__links {
@@ -1084,7 +1102,7 @@ img {
 	cursor: pointer;
 }
 
-.basket__image-wrapper {
+.basket__item-wrapper {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -1094,10 +1112,18 @@ img {
 	width: 300px;
 }
 
-.basket__image {
-	border-radius: 50%;
+.basket__image-wrapper {
+	flex-shrink: 0;
 	margin-right: 10px;
+	width: 30px;
+	height: 30px;
+
+	border: 2px solid #ffffff70;
+	border-radius: 50%;
+
+	background-color: #777777;
 }
+
 
 .basket__amount {
 	display: flex;
@@ -1402,6 +1428,8 @@ img {
 
 .filter__price-input::-webkit-slider-thumb:hover {
 	transform: scale(2);
+
+	cursor: pointer;
 }
 
 .filter__price-input::-webkit-slider-runnable-track {
