@@ -7,3 +7,7 @@
   }
 }
 )();
+
+for (let i of sliderRadioAll) {
+  i.addEventListener("click", changeSliderImage)
+}
