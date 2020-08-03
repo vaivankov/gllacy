@@ -1,20 +1,24 @@
 'use strict';
 
 (function () {
-  window.syncSliderValues = function () {
-    let sliderMinValue = +sliderPriceMin.value,
-      sliderMaxValue = +sliderPriceMax.value;
+  window.syncSliderValues = function (evt) {
+    let sliderThumb = this;
+    let sliderWrapper = sliderThumb.closest(".filter__input-slider");
+    let sliderTrack = sliderWrapper.querySelector(".slider-track");
+    let sliderMinValue = +sliderPriceMin.value;
+    let sliderMaxValue = +sliderPriceMax.value;
 
     if (sliderMinValue > sliderMaxValue) {
       sliderPriceMin.value = sliderMaxValue;
       syncMinPriceSliderNMinPriceInput();
-      return;
     }
     if (sliderMaxValue < sliderMinValue) {
       sliderPriceMax.value = sliderMinValue;
       syncMaxPriceSliderNMaxPriceInput();
-      return;
     }
+
+    sliderTrack.style.setProperty(`--${sliderThumb.id}`, +sliderThumb.value);
+
   }
 })();
 

@@ -1430,30 +1430,6 @@ img {
 	pointer-events: none;
 }
 
-.filter__price-input::-webkit-slider-thumb {
-	position: absolute;
-	top: -7px;
-	left: 0;
-	transform: scale(1.5);
-
-	pointer-events: all;
-}
-
-.filter__price-input::-webkit-slider-thumb:hover {
-	transform: scale(2);
-
-	cursor: pointer;
-}
-
-.filter__price-input::-webkit-slider-runnable-track {
-	position: relative;
-
-	height: 2px;
-	border: none;
-
-	background-color: #fff;
-}
-
 .filter__fatness {
 	flex-grow: 1;
 	margin-bottom: 20px;
@@ -1566,4 +1542,118 @@ img {
 	background-color: #f7f6f3;
 
 	cursor: pointer;
+}
+
+.slider-track {
+	position: absolute;
+
+	width: 85%;
+	height: 4px;
+
+	background-color: #ffffff40;
+
+	z-index: 2;
+}
+
+.slider-track {
+	--filler-width: calc(var(--max) - var(--min));
+}
+
+.slider-track::before,
+.slider-track::after {
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	height: 4px;
+
+	background: #ffffff;
+
+	content: "";
+	z-index: 4;
+}
+
+.slider-track::before {
+	margin-left: calc(
+		(var(--left-value) - var(--min)) / var(--filler-width) * 100%
+	);
+	width: calc(
+		(var(--right-value) - var(--left-value)) / var(--filler-width) * 100%
+	);
+}
+
+.slider-track::after {
+	margin-left: calc(
+		(var(--right-value) - var(--min)) / var(--filler-width) * 100%
+	);
+	width: calc(
+		(var(--left-value) - var(--right-value)) / var(--filler-width) * 100%
+	);
+}
+
+input[type="range"] {
+	margin: 0;
+
+	font: inherit;
+
+	background: none;
+
+	pointer-events: none;
+}
+
+input[type="range"]::-webkit-slider-runnable-track,
+input[type="range"]::-webkit-slider-thumb,
+input[type="range"] {
+	-webkit-appearance: none;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+	position: relative;
+
+	height: 4px;
+	width: 100%;
+
+	background: none;
+	background-color: #ffffff40;
+}
+
+input[type="range"]::-moz-range-track {
+	position: relative;
+
+	height: 4px;
+	width: 100%;
+
+	background: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+	position: absolute;
+	top: -9px;
+	left: 0;
+
+	width: 20px;
+	height: 23px;
+
+	background-image: url("../svg//filter-button.svg");
+	border: none;
+	border-radius: 0;
+
+	pointer-events: auto;
+	z-index: 9;
+}
+
+input[type="range"]::-moz-range-thumb {
+	position: absolute;
+	top: -9px;
+	left: 0;
+
+	width: 20px;
+	height: 23px;
+
+	background-image: url("../svg//filter-button.svg");
+	border: none;
+	border-radius: 0;
+
+	pointer-events: auto;
+	z-index: 9;
 }

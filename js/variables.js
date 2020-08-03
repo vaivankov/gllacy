@@ -10,5 +10,5 @@ window.feedbackShow = document.querySelector('.button--feedback');
 
 window.spanPriceMin = document.querySelector(".filter__price-min");
 window.spanPriceMax = document.querySelector(".filter__price-max");
-window.sliderPriceMin = document.querySelector("#filter__price-input-min");
-window.sliderPriceMax = document.querySelector("#filter__price-input-max");
+window.sliderPriceMin = document.querySelectorAll(".filter__price-input")[0];
+window.sliderPriceMax = document.querySelectorAll(".filter__price-input")[1];

@@ -254,11 +254,12 @@
               <span class="filter__price-label" for="input-slider">Цена: <span class="filter__price-min">150</span> руб.
                 – <span class="filter__price-max">400</span> руб.</span>
               <div class="filter__input-slider button">
-                <label class="visually-hidden" for="filter__price-input-min">Минимальная цена</label>
-                <input class="filter__price-input" id="filter__price-input-min" name="min-price" type="range" min="100"
+                <div class="slider-track" style="--left-value: 150; --right-value: 400; --min: 100; --max: 500;"></div>
+                <label class="visually-hidden" for="left-value">Минимальная цена</label>
+                <input class="filter__price-input" id="left-value" name="min-price" type="range" min="100"
                   max="500" step="5" value="150">
-                <label class="visually-hidden" for="filter__price-input-max">Максимальная цена</label>
-                <input class="filter__price-input" id="filter__price-input-max" name="max-price" type="range" min="100"
+                <label class="visually-hidden" for="right-value">Максимальная цена</label>
+                <input class="filter__price-input" id="right-value" name="max-price" type="range" min="100"
                   max="500" step="5" value="400">
               </div>
             </div>
@@ -648,7 +649,7 @@
           aria-label="Иконка Facebook">
           <path class="social__icon-filler" fill="#ffffff95"
             d="M16 0C7.164 0 0 7.163 0 16s7.164 16 16 16c8.837 0 16-7.164 16-16S24.837 0 16 0zm4.062 9.455h-3.021v3.444h3.021v3.445h-3.021v8.61H14.02v-8.61H11v-3.445h3.021V9.455c0-1.902 1.353-3.445 3.021-3.445h3.021v3.445z" />
-          </svg>
+        </svg>
       </a>
       <a href="#">
         <svg class="social__icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
