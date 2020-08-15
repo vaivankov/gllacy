@@ -1,5 +1,5 @@
 # Gllacy Shop
-Проект сайта производителя мороженого Gllacy Shop
+Проект десктопного сайта производителя мороженого Gllacy Shop
 
 Автор макета: [HTML Academy](https://htmlacademy.ru/)
 
