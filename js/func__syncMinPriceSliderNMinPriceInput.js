@@ -1,9 +1,7 @@
-'use strict';
+"use strict";
 
-(function () {
-  window.syncMinPriceSliderNMinPriceInput = function () {
-    spanPriceMin.innerHTML = sliderPriceMin.value;
-  }
-})();
+window.syncMinPriceSliderNMinPriceInput = function () {
+	spanPriceMin.innerHTML = sliderPriceMin.value;
+};
 
 sliderPriceMin.addEventListener("input", syncMinPriceSliderNMinPriceInput);
