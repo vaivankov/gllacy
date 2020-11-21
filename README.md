@@ -8,4 +8,4 @@
 
 Автор макета: [HTML Academy](https://htmlacademy.ru/)
 
-Главная страница: [gllacy](https://vaivankov.github.io/gllacy/)
+Главная страница: [gllacy](https://vaivankov.github.io/html-gllacy-desktop/)
